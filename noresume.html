@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Резюме</title>
+</head>
+
+<body>
+    <section class="x-content black">
+        <div class="heading grid grid-2">
+            <h1>Резюме не создано...</h1>
+            <button class="btn-close"></button>
+        </div>
+       <p>Создайте резюме в&nbsp;личном кабинете на&nbsp;сайте времякарьеры.рф (вы&nbsp;можете отсканировать QR-код на&nbsp;вашей NFC-карте и&nbsp;перейти в&nbsp;личный кабинет сразу) и&nbsp;оно появится тут</p>
+    </section>
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0;
+        padding: 1em 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-close {
+        position: relative;
+        justify-self: end;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 0;
+        border: 0;
+        background-color: #ffffff;
+    }
+
+    .btn-close:before,
+    .btn-close:after {
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: '';
+        width: 17px;
+        height: 2px;
+        background-color: var(--color-blue);
+        border-radius: 1px;
+    }
+
+    .btn-close:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .btn-close:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 1.75em;
+        margin: 0;
+    }
+
+    p {
+        line-height: 1.4em;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+</style>
